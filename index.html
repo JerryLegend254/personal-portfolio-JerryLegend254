@@ -1,25 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home - My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Reset some defaults */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the homepage where I introduce myself and showcase my skills and achievements.</p>
-  </header>
+      /* Background color */
+      body {
+        background-color: #f4f4f9; /* light grayish */
+        font-family: Arial, sans-serif;
+      }
 
-</body>
+      /* Navigation styling */
+      nav {
+        width: 100%;
+        background-color: #333;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Header */
+      header {
+        width: 100%;
+        background-color: #4a90e2; /* blue */
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+
+      header img {
+        margin-top: 1rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid white;
+      }
+
+      /* Footer */
+      footer {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        This is the homepage where I introduce myself and showcase my skills and
+        achievements.
+      </p>
+      <!-- Profile Image -->
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4D03AQE-h1IxUcMbBg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685950283458?e=1758758400&v=beta&t=2AvC4u_tw-rpQCoIbzLDpIy48v4heFMC0i1DzGHR7QQ"
+        alt="My Profile Picture"
+      />
+    </header>
+
+    <footer>© 2025 My Portfolio.</footer>
+  </body>
 </html>
