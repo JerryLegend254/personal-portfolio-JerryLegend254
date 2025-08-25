@@ -1,26 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me - My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About Me</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      nav {
+        background-color: #333;
+        width: 100%;
+      }
 
-  <section>
-    <h1>About Me</h1>
-    <p>A brief introduction about myself, my background, skills, and passions.</p>
-    <!-- Students can add more personal details here -->
-  </section>
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+      }
 
-</body>
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      section img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 1rem auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      ul {
+        margin-left: 20px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>About Me</h1>
+      <p>
+        Hello! My name is Jeremy Okuto, and I am a passionate developer who
+        enjoys building creative and practical digital solutions. Here’s a
+        little more about me:
+      </p>
+
+      <h2>Background & Education</h2>
+      <p>
+        I studied Computer Science at Strathmore University, where I built a
+        strong foundation in programming, data structures, and web technologies.
+        Over the years, I’ve worked on both academic and personal projects that
+        helped me improve my problem-solving skills.
+      </p>
+
+      <h2>Skills & Technologies</h2>
+      <p>
+        Through my studies and projects, I’ve gained experience in various
+        technologies and tools. Some of my strongest skills include:
+      </p>
+      <ul>
+        <li>Programming Languages: JavaScript, Go, Python</li>
+        <li>Web Development: HTML, CSS, React.js</li>
+        <li>Backend Development: Node.js, Golang, REST APIs</li>
+        <li>Databases: MySQL, PostgreSQL</li>
+        <li>Tools & Version Control: Git, Docker</li>
+      </ul>
+
+      <h2>Hobbies, Passions & Goals</h2>
+      <p>
+        Outside of coding, I enjoy reading tech blogs, exploring new tools, and
+        contributing to open-source projects. I’m also passionate about
+        mentoring other students and helping them grow in their tech journeys.
+        My career goal is to become a full-stack developer who not only builds
+        applications but also designs solutions that make life easier for
+        people.
+      </p>
+
+      <!-- Profile Photo -->
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4D03AQE-h1IxUcMbBg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685950283458?e=1758758400&v=beta&t=2AvC4u_tw-rpQCoIbzLDpIy48v4heFMC0i1DzGHR7QQ"
+        alt="Profile photo of Jeremy Okuto"
+      />
+    </section>
+
+    <footer>© 2025 My Portfolio.</footer>
+  </body>
 </html>
